@@ -53,6 +53,8 @@ highlight ColorColumn ctermbg=darkgray
 " NERDTree
 autocmd vimenter * NERDTree
 autocmd VimEnter * if argc() == 1 && isdirectory(argv()[0]) && !exists("s:std_in") | exe 'NERDTree' argv()[0] | wincmd p | ene | endif
+" Jump to the main window.
+autocmd VimEnter * wincmd p
 
 " vim-nerdtree-tabs
 let g:nerdtree_tabs_open_on_console_startup=1
