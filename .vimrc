@@ -10,9 +10,9 @@ call vundle#begin()
 " let Vundle manage Vundle, required
 Plugin 'VundleVim/Vundle.vim'
 
+" Utility
 Plugin 'scrooloose/nerdtree'
 Plugin 'jistr/vim-nerdtree-tabs'
-
 Plugin 'Valloric/YouCompleteMe'
 
 Plugin 'vim-airline/vim-airline'
@@ -41,11 +41,13 @@ syntax on
 colorscheme spring-night
 let g:airline_theme = 'spring_night'
 let g:sprint_night_kill_italic = 1
-set tabstop=2
-set shiftwidth=2
-set expandtab
+set tabstop=4
+set softtabstop=4
+set shiftwidth=4
+set noexpandtab
+set colorcolumn=160
 set number
-
+highlight ColorColumn ctermbg=darkgray
 
 " Plug in configuration
 " NERDTree
